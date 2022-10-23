@@ -40,12 +40,11 @@
     btn.addEventListener("click", () => {
       const step = 10;
       const firstFontSize = "4em";
-      first.style.fontSize = firstFontSize;
-
       const firstWidth = first.getBoundingClientRect().width;
-      first.style.width = firstWidth + step + "px";
-
       const firstBackground = "burlywood";
+
+      first.style.fontSize = firstFontSize;
+      first.style.width = firstWidth + step + "px";
       first.style.backgroundColor = firstBackground;
     });
   </script>
