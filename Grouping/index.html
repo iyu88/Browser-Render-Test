@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../index.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <h1>Browser Render Test</h1>
+    <ul>
+      <li id="first" class="burlywood">
+        First
+      </li>
+      <li id="second" class="greenyellow">
+        Second
+      </li>
+      <li id="third" class="mediumslateblue">
+        Third
+      </li>
+      <li id="forth" class="indigo">
+        Forth
+      </li>
+    </ul>
+    <button>
+      Render
+    </button>
+  </main>
+  <script>
+    const btn = document.querySelector('button');
+    const first = document.querySelector("#first")
+    const second = document.querySelector("#second")
+    const third = document.querySelector("#third")
+    const forth = document.querySelector("#forth")
+
+    btn.addEventListener("click", () => {
+      const step = 10;
+      const firstWidth = first.getBoundingClientRect().width;
+      first.style.width = firstWidth + step + "px";
+
+      const secondWidth = second.getBoundingClientRect().width;
+      second.style.width = secondWidth + step + "px";
+
+      const thirdWidth = third.getBoundingClientRect().width;
+      third.style.width = thirdWidth + step + "px";
+
+      const forthWidth = forth.getBoundingClientRect().width;
+      forth.style.width = forthWidth + step + "px";
+    });
+  </script>
+</body>
+
+</html>
