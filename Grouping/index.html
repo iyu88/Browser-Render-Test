@@ -22,7 +22,7 @@
       <li id="third" class="mediumslateblue">
         Third
       </li>
-      <li id="forth" class="indigo">
+      <li id="forth" class="hotpink">
         Forth
       </li>
     </ul>
@@ -38,16 +38,17 @@
     const forth = document.querySelector("#forth")
 
     btn.addEventListener("click", () => {
-      const step = 10;
-      const firstWidth = first.getBoundingClientRect().width;
-      const secondWidth = second.getBoundingClientRect().width;
-      const thirdWidth = third.getBoundingClientRect().width;
-      const forthWidth = forth.getBoundingClientRect().width;
+      const firstBackground = "burlywood";
+      first.style.backgroundColor = firstBackground;
 
-      first.style.width = firstWidth + step + "px";
-      second.style.width = secondWidth + step + "px";
-      third.style.width = thirdWidth + step + "px";
-      forth.style.width = forthWidth + step + "px";
+      const secondBackground = "greenyellow";
+      second.style.backgroundColor = secondBackground;
+
+      const thirdBackground = "mediumslateblue";
+      third.style.backgroundColor = thirdBackground;
+
+      const forthBackground = "hotpink";
+      forth.style.backgroundColor = forthBackground;
     });
   </script>
 </body>
