@@ -43,9 +43,7 @@
       const firstWidth = first.getBoundingClientRect().width;
       const firstBackground = "burlywood";
 
-      first.style.fontSize = firstFontSize;
-      first.style.width = firstWidth + step + "px";
-      first.style.backgroundColor = firstBackground;
+      first.style.cssText = `font-size: ${firstFontSize}; width: ${firstWidth + step}px; background-color: ${firstBackground};`
     });
   </script>
 </body>
