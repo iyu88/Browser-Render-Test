@@ -40,15 +40,13 @@
     btn.addEventListener("click", () => {
       const step = 10;
       const firstWidth = first.getBoundingClientRect().width;
-      first.style.width = firstWidth + step + "px";
-
       const secondWidth = second.getBoundingClientRect().width;
-      second.style.width = secondWidth + step + "px";
-
       const thirdWidth = third.getBoundingClientRect().width;
-      third.style.width = thirdWidth + step + "px";
-
       const forthWidth = forth.getBoundingClientRect().width;
+
+      first.style.width = firstWidth + step + "px";
+      second.style.width = secondWidth + step + "px";
+      third.style.width = thirdWidth + step + "px";
       forth.style.width = forthWidth + step + "px";
     });
   </script>
